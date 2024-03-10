@@ -8,5 +8,5 @@ RUN rpm-ostree override remove firefox firefox-langpacks
 
 RUN rpm-ostree install papirus-icon-theme
 
-RUN rpm-ostree cleanup
+RUN rpm-ostree cleanup --repomd
 RUN ostree container commit
