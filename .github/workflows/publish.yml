@@ -1,0 +1,25 @@
+# This is free and unencumbered software released into the public domain.
+
+name: publish
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+    steps:
+
+      - name: checkout
+        uses: actions/checkout@v3
+
+      - name: login
+        run: podman login ghcr.io --username ${{ github.actor }} --password ${{ secrets.GITHUB_TOKEN }}
+
+      - name: build
+        run: podman build --file desktop.containerfile --tag ghcr.io/ngarside/desktop:latest .
+
+      - name: push
+        run: podman push ghcr.io/ngarside/desktop:latest
