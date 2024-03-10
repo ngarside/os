@@ -6,8 +6,6 @@ RUN flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flath
 
 RUN rpm-ostree override remove khelpcenter
 
-RUN rpm-ostree override remove kmenuedit
-
 RUN rpm-ostree override remove kmousetool
 
 RUN rpm-ostree override remove kwrite kwrited
