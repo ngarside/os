@@ -10,6 +10,8 @@ RUN rpm-ostree override remove kmousetool
 
 RUN rpm-ostree override remove kwrite kwrited
 
+RUN rpm-ostree override remove filelight
+
 RUN rpm-ostree override remove firefox firefox-langpacks
 
 RUN rpm-ostree override remove plasma-welcome plasma-welcome-lang
