@@ -8,6 +8,8 @@ RUN rpm-ostree override remove kcharselect
 
 RUN rpm-ostree override remove kfind
 
+RUN rpm-ostree override remove krfb krfb-libs
+
 RUN rpm-ostree override remove khelpcenter
 
 RUN rpm-ostree override remove kmousetool
