@@ -6,6 +6,8 @@ RUN flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flath
 
 RUN rpm-ostree override remove kcharselect
 
+RUN rpm-ostree override remove kde-partitionmanager
+
 RUN rpm-ostree override remove kdeconnectd kde-connect kde-connect-libs
 
 RUN rpm-ostree override remove kfind
