@@ -14,7 +14,7 @@ RUN rpm-ostree override remove filelight
 
 RUN rpm-ostree override remove firefox firefox-langpacks
 
-RUN rpm-ostree override remove plasma-welcome plasma-welcome-lang
+RUN rpm-ostree override remove plasma-welcome
 
 RUN rpm-ostree install papirus-icon-theme
 
