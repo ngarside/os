@@ -12,6 +12,8 @@ RUN rpm-ostree override remove kdeconnectd kde-connect kde-connect-libs
 
 RUN rpm-ostree override remove kfind
 
+RUN rpm-ostree override remove plasma-drkonqi
+
 RUN rpm-ostree override remove krfb krfb-libs
 
 RUN rpm-ostree override remove khelpcenter
