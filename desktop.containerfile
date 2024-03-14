@@ -8,7 +8,7 @@ RUN rpm-ostree override remove khelpcenter
 
 RUN rpm-ostree override remove kmousetool
 
-RUN rpm-ostree override remove kwrite kwrited
+RUN rpm-ostree override remove kwrite
 
 RUN rpm-ostree override remove filelight
 
