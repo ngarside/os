@@ -4,6 +4,8 @@ FROM quay.io/fedora/fedora-kinoite:40
 
 RUN flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
+RUN rpm-ostree override remove kfind
+
 RUN rpm-ostree override remove khelpcenter
 
 RUN rpm-ostree override remove kmousetool
