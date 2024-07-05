@@ -20,7 +20,7 @@ rpm-ostree override remove git-core git-core-doc
 
 rpm-ostree override remove virtualbox-guest-additions
 
-rpm-ostree override remove fedora-bookmarks fedora-logos fedora-workstation-backgrounds
+rpm-ostree override remove fedora-bookmarks fedora-workstation-backgrounds
 
 rpm-ostree override remove gnome-shell-extension-common gnome-shell-extension-apps-menu gnome-shell-extension-launch-new-instance gnome-shell-extension-places-menu gnome-shell-extension-window-list gnome-shell-extension-background-logo
 
