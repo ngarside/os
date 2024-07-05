@@ -1,6 +1,8 @@
 # This is free and unencumbered software released into the public domain.
 
-FROM quay.io/fedora/fedora-kinoite:40
+FROM quay.io/fedora/fedora-silverblue:40
+
+RUN rpm-ostree override remove yelp
 
 # RUN flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
@@ -31,16 +33,16 @@ FROM quay.io/fedora/fedora-kinoite:40
 # RUN rpm-ostree override remove plasma-welcome
 
 # https://rpmfusion.org/Configuration
-RUN rpm-ostree install \
-  https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
-  https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+# RUN rpm-ostree install \
+#   https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
+#   https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 # https://rpmfusion.org/Howto/NVIDIA#Special_notes
-RUN rpm-ostree install akmod-nvidia xorg-x11-drv-nvidia
+# RUN rpm-ostree install akmod-nvidia xorg-x11-drv-nvidia
 # RUN rpm-ostree kargs --append=rd.driver.blacklist=nouveau --append=modprobe.blacklist=nouveau --append=nvidia-drm.modeset=1 # this might not be needed at some point when ostree systems will support the standard way to specify this.
 # https://github.com/CheariX/silverblue-akmods-keys
 
-RUN rpm-ostree install papirus-icon-theme
+# RUN rpm-ostree install papirus-icon-theme
 
 RUN rpm-ostree cleanup --repomd
 RUN ostree container commit
