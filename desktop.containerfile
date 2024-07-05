@@ -2,7 +2,15 @@
 
 FROM quay.io/fedora/fedora-silverblue:40
 
-RUN rpm-ostree override remove yelp
+COPY ./desktop.sh /tmp/desktop
+
+RUN chmod +x /tmp/desktop
+
+RUN /tmp/desktop
+
+RUN rm /tmp/desktop
+
+# RUN rpm-ostree override remove yelp
 
 # RUN flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
@@ -44,5 +52,5 @@ RUN rpm-ostree override remove yelp
 
 # RUN rpm-ostree install papirus-icon-theme
 
-RUN rpm-ostree cleanup --repomd
-RUN ostree container commit
+# RUN rpm-ostree cleanup --repomd
+# RUN ostree container commit
