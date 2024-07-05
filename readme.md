@@ -5,3 +5,7 @@ sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/ngarsid
 ```
 rpm-ostree upgrade
 ```
+
+```
+flatpak remove --all --delete-data --noninteractive
+```
