@@ -16,6 +16,8 @@ rpm-ostree override remove gnome-system-monitor
 
 rpm-ostree override remove gnome-disk-utility
 
+rpm-ostree override remove gnome-shell-extension-common gnome-shell-extension-apps-menu gnome-shell-extension-launch-new-instance gnome-shell-extension-places-menu gnome-shell-extension-window-list gnome-shell-extension-background-logo
+
 rpm-ostree install gnome-console
 
 # flatpak remove --all --delete-data --noninteractive
