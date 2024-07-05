@@ -24,7 +24,7 @@ rpm-ostree install gnome-console
 
 # gsettings set org.gnome.shell app-picker-layout "[]"
 
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak remote-add flathub https://flathub.org/repo/flathub.flatpakrepo
 
 rpm-ostree cleanup --repomd
 
