@@ -16,6 +16,12 @@ rpm-ostree override remove gnome-system-monitor
 
 rpm-ostree override remove gnome-disk-utility
 
+rpm-ostree override remove git-core git-core-doc
+
+rpm-ostree override remove virtualbox-guest-additions
+
+rpm-ostree override remove fedora-bookmarks fedora-logos fedora-workstation-backgrounds
+
 rpm-ostree override remove gnome-shell-extension-common gnome-shell-extension-apps-menu gnome-shell-extension-launch-new-instance gnome-shell-extension-places-menu gnome-shell-extension-window-list gnome-shell-extension-background-logo
 
 rpm-ostree install gnome-console
@@ -24,7 +30,7 @@ rpm-ostree install gnome-console
 
 # gsettings set org.gnome.shell app-picker-layout "[]"
 
-flatpak remote-add flathub https://flathub.org/repo/flathub.flatpakrepo
+# flatpak remote-add flathub https://flathub.org/repo/flathub.flatpakrepo
 
 rpm-ostree cleanup --repomd
 
