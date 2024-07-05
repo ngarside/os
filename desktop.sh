@@ -12,6 +12,8 @@ rpm-ostree override remove gnome-terminal gnome-terminal-nautilus
 
 rpm-ostree override remove firefox firefox-langpacks
 
+rpm-ostree override remove gnome-system-monitor
+
 rpm-ostree install gnome-console
 
 # flatpak remove --all --delete-data --noninteractive
