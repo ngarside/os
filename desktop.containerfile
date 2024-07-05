@@ -4,11 +4,7 @@ FROM quay.io/fedora/fedora-silverblue:40
 
 COPY ./desktop.sh /tmp/desktop
 
-RUN chmod +x /tmp/desktop
-
-RUN /tmp/desktop
-
-RUN rm /tmp/desktop
+RUN chmod +x /tmp/desktop && /tmp/desktop
 
 # RUN rpm-ostree override remove yelp
 
