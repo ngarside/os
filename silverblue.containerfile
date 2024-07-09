@@ -2,6 +2,6 @@
 
 FROM quay.io/fedora/fedora-silverblue:40
 
-COPY ./desktop.sh /tmp/desktop
+COPY ./setup.sh /tmp/setup
 
-RUN chmod +x /tmp/desktop && /tmp/desktop
+RUN chmod +x /tmp/setup && /tmp/setup
