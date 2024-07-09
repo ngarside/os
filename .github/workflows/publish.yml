@@ -25,7 +25,7 @@ jobs:
         run: podman login ghcr.io --username ${{ github.actor }} --password ${{ secrets.GITHUB_TOKEN }}
 
       - name: build
-        run: podman build --file silverblue.containerfile --tag ghcr.io/ngarside/silverblue:latest .
+        run: podman build --file containerfile --tag ghcr.io/ngarside/silverblue:latest .
 
       - name: push
         run: podman push ghcr.io/ngarside/silverblue:latest
