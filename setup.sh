@@ -9,7 +9,7 @@ rpm-ostree override remove \
 	gnome-classic-session-xsession \
 	gnome-disk-utility \
 	gnome-shell-extension-apps-menu \
-	gnome-shell-extension-background-logo
+	gnome-shell-extension-background-logo \
 	gnome-shell-extension-common \
 	gnome-shell-extension-launch-new-instance \
 	gnome-shell-extension-places-menu \
@@ -20,7 +20,7 @@ rpm-ostree override remove \
 	virtualbox-guest-additions \
 	yelp \
 	yelp-libs \
-	yelp-xsl \
+	yelp-xsl
 
 rpm-ostree install gnome-console
 
