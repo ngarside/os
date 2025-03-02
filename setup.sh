@@ -1,10 +1,10 @@
 # This is free and unencumbered software released into the public domain.
 
+# Remove unwanted default packages
 rpm-ostree override remove \
 	fedora-bookmarks \
 	fedora-workstation-backgrounds \
 	firefox firefox-langpacks \
-	git-core git-core-doc \
 	gnome-classic-session \
 	gnome-classic-session-xsession \
 	gnome-disk-utility \
@@ -15,15 +15,11 @@ rpm-ostree override remove \
 	gnome-shell-extension-places-menu \
 	gnome-shell-extension-window-list \
 	gnome-system-monitor \
-	gnome-terminal gnome-terminal-nautilus \
 	gnome-tour \
-	virtualbox-guest-additions \
 	yelp \
 	yelp-libs \
 	yelp-xsl
 
-rpm-ostree install gnome-console
-
+# Commit changes
 rpm-ostree cleanup --repomd
-
 ostree container commit
