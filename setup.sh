@@ -1,12 +1,13 @@
 # This is free and unencumbered software released into the public domain.
 
+set -euo pipefail
+
 # Remove unwanted default packages
 rpm-ostree override remove \
 	fedora-bookmarks \
 	fedora-workstation-backgrounds \
 	firefox firefox-langpacks \
 	gnome-classic-session \
-	gnome-classic-session-xsession \
 	gnome-disk-utility \
 	gnome-shell-extension-apps-menu \
 	gnome-shell-extension-background-logo \
