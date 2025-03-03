@@ -21,6 +21,9 @@ rpm-ostree override remove \
 	yelp-libs \
 	yelp-xsl
 
+# Install additional packages
+rpm-ostree install papirus-icon-theme
+
 # Commit changes
 rpm-ostree cleanup --repomd
 ostree container commit
