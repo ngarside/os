@@ -22,7 +22,9 @@ rpm-ostree override remove \
 	yelp-xsl
 
 # Install additional packages
-rpm-ostree install papirus-icon-theme
+rpm-ostree install \
+	dotnet-sdk-9.0 \
+	papirus-icon-theme
 
 # Commit changes
 rpm-ostree cleanup --repomd
