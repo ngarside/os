@@ -23,6 +23,7 @@ rpm-ostree override remove \
 
 # Install additional packages
 rpm-ostree install \
+	dotnet-sdk-8.0 \
 	dotnet-sdk-9.0 \
 	papirus-icon-theme
 
