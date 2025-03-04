@@ -25,6 +25,7 @@ rpm-ostree override remove \
 rpm-ostree install \
 	dotnet-sdk-8.0 \
 	dotnet-sdk-9.0 \
+	lm_sensors \
 	papirus-icon-theme
 
 # Commit changes
