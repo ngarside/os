@@ -17,7 +17,6 @@ rpm-ostree override remove \
 	gnome-shell-extension-window-list \
 	gnome-system-monitor \
 	gnome-tour \
-	nodejs \
 	yelp \
 	yelp-libs \
 	yelp-xsl
@@ -27,6 +26,7 @@ rpm-ostree install \
 	dotnet-sdk-8.0 \
 	dotnet-sdk-9.0 \
 	lm_sensors \
+	nodejs \
 	openssl \
 	papirus-icon-theme
 
