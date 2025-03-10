@@ -17,6 +17,7 @@ rpm-ostree override remove \
 	gnome-shell-extension-window-list \
 	gnome-system-monitor \
 	gnome-tour \
+	nodejs \
 	yelp \
 	yelp-libs \
 	yelp-xsl
