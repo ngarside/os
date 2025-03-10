@@ -2,6 +2,7 @@
 
 FROM quay.io/fedora/fedora-silverblue:41
 
+COPY ./la.sh /usr/etc/profile.d/la.sh
 COPY ./setup.sh /tmp/setup
 
 RUN chmod +x /tmp/setup && /tmp/setup
