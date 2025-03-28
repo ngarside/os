@@ -21,6 +21,12 @@ jobs:
       - name: checkout
         uses: actions/checkout@v3
 
+      - uses: actions/delete-package-versions@v5
+        with: 
+          package-name: silverblue
+          package-type: container
+          delete-only-untagged-versions: true
+
       - name: login
         run: podman login ghcr.io --username ${{ github.actor }} --password ${{ secrets.GITHUB_TOKEN }}
 
