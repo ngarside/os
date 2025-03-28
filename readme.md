@@ -31,3 +31,5 @@ flatpak remove --all --delete-data --noninteractive
 # License
 
 This is free and unencumbered software released into the public domain.
+
+Exception of Mountains.png image which is used from https://basicappleguy.com/basicappleblog/mountains-beyond-mountains
