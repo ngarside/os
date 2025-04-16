@@ -26,10 +26,12 @@ rpm-ostree install \
 	azure-cli \
 	dotnet-sdk-8.0 \
 	dotnet-sdk-9.0 \
+	just \
 	lm_sensors \
 	nodejs \
 	openssl \
-	papirus-icon-theme
+	papirus-icon-theme \
+	podman-docker
 
 # Commit changes
 rpm-ostree cleanup --repomd
