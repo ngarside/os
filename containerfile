@@ -1,6 +1,6 @@
 # This is free and unencumbered software released into the public domain.
 
-FROM quay.io/fedora/fedora-silverblue:41
+FROM quay.io/fedora/fedora-silverblue:42
 
 COPY ./la.sh /usr/etc/profile.d/la.sh
 COPY ./setup.sh /tmp/setup
